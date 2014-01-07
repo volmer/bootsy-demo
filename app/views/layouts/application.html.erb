@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BootsyDemo</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Bootsy Demo</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
 
-<%= yield %>
+  <body>
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li>
+            <%= link_to 'Source code', 'https://github.com/volmer/bootsy-demo', target: '_blank' %>
+          </li>
 
-</body>
+          <li>
+            <%= link_to 'Bootsy Project', 'https://github.com/volmer/bootsy', target: '_blank' %>
+          </li>
+        </ul>
+
+        <h3 class="text-muted">
+          Bootsy Demo
+        </h3>
+      </div>
+
+      <%= yield %>
+
+      <div class="footer">
+        <p class="text-muted">
+          &copy; Volmer Soares 2012-<%= Time.now.year %>. This application is under the terms of the MIT license.
+          <%= link_to 'Source code here', 'https://github.com/volmer/bootsy-demo', target: '_blank' %>.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
