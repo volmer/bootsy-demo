@@ -1,9 +1,13 @@
-<p class="lead">
-  This page demonstrates the usage of the
-  <%= link_to 'Bootsy gem', 'https://github.com/volmer/bootsy', target: '_blank' %>
-  in a Rails application.
-</p>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p class="lead">
+      This page demonstrates the usage of the
+      <%= link_to 'Bootsy WYSIWYG input', 'https://github.com/volmer/bootsy', target: '_blank' %>
+      in a Rails application.
+    </p>
 
-<%= form_tag '#' do %>
-  <%#= bootsy_area 'content' %>
-<% end %>
+    <%= form_tag '#' do %>
+      <%= bootsy_area 'post', 'content', class: 'form-control', rows: 10 %>
+    <% end %>
+  </div>
+</div>
