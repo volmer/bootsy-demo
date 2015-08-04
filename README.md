@@ -8,4 +8,4 @@ Check it out at [bootsy-demo.herokuapp.com](http://bootsy-demo.herokuapp.com).
 
 ## License
 
-MIT License. Copyright 2014 Volmer Soares.
+MIT License. Copyright 2015 Volmer Soares.
