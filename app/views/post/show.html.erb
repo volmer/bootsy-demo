@@ -6,8 +6,8 @@
       in a Rails application.
     </p>
 
-    <%= form_tag '#' do %>
-      <%= bootsy_area 'post', 'content', value: demo_value, class: 'form-control', rows: 12 %>
+    <%= form_for @post do |f| %>
+      <%= f.bootsy_area :content, class: 'form-control', rows: 12 %>
     <% end %>
   </div>
 </div>

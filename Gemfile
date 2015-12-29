@@ -12,6 +12,7 @@ gem 'bootstrap-sass'
 gem 'bootsy', github: 'volmer/bootsy'
 gem 'puma'
 gem 'rails_12factor', group: :production
+gem 'sprockets-rails', '~> 2.3'
 
 group :development, :test do
   gem 'rspec-rails'
