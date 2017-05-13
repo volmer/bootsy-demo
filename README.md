@@ -1,5 +1,7 @@
 # Bootsy Demo
 
+### Disclaimer: this project is no longer maintained.
+
 This app demonstrates the usage of the [Bootsy WYSIWYG input](https://github.com/volmer/bootsy)
 in a Rails application.
 
